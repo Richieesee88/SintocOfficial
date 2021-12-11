@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    background-color:burlywood;
+    align-items: center;
+}
+.logo{
+    margin-left: 35px;
+}
+
+nav{
+    margin-right: 0px;
+    padding: 1;
+    float: right;
+    display: flex;
+}
+
+ul{
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+
+    
+}
+ul li{
+    display: inline;
+    margin-right: 20px;
+}
+ ul li:hover{
+    background-color:white;
+	color:#404040;
+}
+
+
+a{
+    text-decoration: none;
+    color: :#545; 
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    color: #455;
+}
+
+.background{
+ background-color:beige;
+ padding-bottom: 30px;
+}
+
+.image-container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.background2{
+    background-image: url(images/gaming%20bg.jpg);
+    padding-top:100px;
+    padding-bottom: 50px;
+    
+    
+}
+
+.row2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column2{
+    flex-basis: 40%;
+    min-width: 300px;
+}
+
+.column2 img{
+    max-width: 80%;
+    position: relative;
+    transition: left 2s;
+}
+
+.column2 h1{
+    font-size: 30px;
+    line-height: 0px;
+    margin: 25px 0;
+}
+
+
+.column{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+
+.column img{
+    max-width: 100%;
+    position: relative;
+    transition: left 2s;
+}
+
+.column h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    background:#b5956b;
+    color:white;
+    padding: 10px 5px;
+    margin: 20px 0;
+    border-radius:30px;
+}
+
+.btn2{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: inline-block;
+    background:#990000;
+    color:white;
+    padding: 10px 5px;
+    margin: 20px 0;
+    border-radius:30px;
+}
+
+.slide-container{
+    width: 100%;
+    height: 30%;
+    padding: 0px;
+    margin: 0px;
+}
+slider {
+      padding: 0px;
+      display: flex;
+      width: 100%;
+      height: 200px;
+      background-color: #1f1f1f;
+      overflow: hidden;
+      position:absolute;
+}
+slider > * {
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 50%;
+      background: #1f1flf;
+      animation: slide 12s infinite;
+      overflow: hidden;
+}
+slide:nth-child(1) {
+      left: -20%;
+      animation-delay: -2s;
+      background-image: url(images/honor8.png);
+      background-size: 350px 350px;
+      background-repeat: no-repeat;
+      background-position:center;
+      padding: 200px
+}
+slide:nth-child(2) {
+      left: -2%;
+      animation-delay: 2s;
+      background-image: url(images/gsmarena_002.png);
+      background-size: cover;
+      background-position: center;
+      padding: 200px
+}
+slide:nth-child(3) {
+      left: -10%;
+      animation-delay: 6s;
+      background-image: url(images/iphone_11.png);
+      background-size: cover;
+      background-position: center;
+      padding: 200px
+}
+slide:nth-child(4) {
+      left: -10%;
+      animation-delay: 12s;
+      padding: 20px
+}
+
+slide p {
+      font-family: Comfortaa;
+      font-size: 10px;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      margin: 50px;
+      color: #fff;
+}
+@keyframes slide {
+    0% {left: -10%;}
+    50% {left: 500px;}
+    100% {left: 2000px;}
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style/style.css" class="css">
+<title>Sintoc.com</title>
+
+    <div class="navbar">
+      <div class="logo">
+         <img src="images/Sintoc-logos_black.png" width="150px">
+      </div>
+      <nav>   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <ul>
+             <li><a href="D:\Desktop\E commerce/index.html">Home</a></li>
+             <li><a href="catalog.html">Browse</a></li>
+             <li><a href="">Home</a></li>
+         </ul>
+      </nav>
+    </div>
+</head>
+<body> I
+<div class="small-container single-product">
+    <div class="row">
+    <div class="col-2">
+        <img src="images/pixel6.jpg" width="100%" id="Producting"> 
+        
+        </div>
+        <div class="col-2">
+            <p>Mobile Phones</p>
+            <h1>Google Pixel 6 – 5G Android Phone - Unlocked Smartphone with Wide and Ultrawide Lens - 128GB </h1>
+            <h4>PHP43,020</h4>
+            <select>
+                <option>Coral</option>
+                <option>Sorta Seafoam</option>
+                <option>Stormy Black</option>
+                <option>Cloudy White</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to Cart</a>
+            <h3>Specification<i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Google Pixel 6<br><br><b>About this item</b></p><br>
+            <ul>
+                <li><p>New Pixel experience is more modern and intuitive, with colors that reflect your personal style; the At a Glance feature shows you the apps and info you need when you need it, like a boarding pass before a flight</p></li>
+                <li><p>Platform: OS	Android 12
+Chipset	Google Tensor (5 nm)
+CPU	Octa-core (2x2.80 GHz Cortex-X1 & 2x2.25 GHz Cortex-A76 & 4x1.80 GHz Cortex-A55)
+GPU	Mali-G78 MP20</p></li>
+                <li><p>Camera:Dual	50 MP, f/1.9, 25mm (wide), 1/1.31", 1.2µm, Dual Pixel PDAF, Laser AF, OIS
+12 MP, f/2.2, 17mm, 114˚ (ultrawide), 1.25µm
+Features	Dual-LED flash, Pixel Shift, Auto-HDR, panorama
+Video	4K@30/60fps, 1080p@30/60/120/240fps; gyro-EIS, OIS
+SELFIE CAMERA	Single	8 MP, f/2.0, 24mm (wide), 1.12µm
+Features	Auto-HDR, panorama
+Video	1080p@30fps</p></li>
+                <li><p>Battery: Type	Li-Ion 4614 mAh, non-removable
+Charging	Fast charging 30W, 50% in 30 min (advertised)
+Fast wireless charging 21W
+Reverse wireless charging
+USB Power Delivery 3.0</p></li>
+                <li><p>Display: Type	AMOLED, 90Hz, HDR10+
+Size	6.4 inches, 98.9 cm2 (~83.4% screen-to-body ratio)
+Resolution	1080 x 2400 pixels, 20:9 ratio (~411 ppi density)
+Protection	Corning Gorilla Glass Victus
+ 	Always-on display</p></li>
+                </ul>
+        </div>
+    </div>
+    </div>
+    <div class='form'>
+        <h5>Add Comment</h5>
+        Name: <input type="text" id="name"><br><br>
+        Date: <input type="date" id="date"><br><br>
+        Body: <textarea rows="5" col="30" id="bodyText"></textarea><br><br>
+        <input type="button" id="addComment" value="Add Comment"> 
+<script>
+        
+    function editReview(){
+        const textarea = document.getElementById('bodyText');
+        let badwords = /fuck|fucking|shit|bitch|idiot|hell|nigga|BITCH|Piss|Dick|Asshole|Bastard|Damn|Cunt|Putanginamo|Walanghiya|Tae|Puñeta|Gago|Pakshet|Buwisit|Leche|ulul|sira|ulol|pakyu|putangna|refund|tarantado|putaragis|tite|penis|kupal|kinginamers|yawa|poke|shitty|poop|poopyhead|bad|hakdog|mema|baliw|shitty|pokpok|pota|taena|putae|pangit/gi;
+        let userreview1 = textarea.value;
+        let userreview2 = userreview1.replace(badwords,'######');
+        document.getElementById('bodyText').value = userreview2;
+    }
+        document.getElementById('addComment').addEventListener('click',editReview);
+    </script>
+
+    </div>
+    
+    <div id='container'>
+    
+    </div>
+    
+    
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src='script.js' type='text/javascript'></script>
+    
+        
+    
+    
+    
+</body>
+</html>

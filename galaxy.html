@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style/style.css" class="css">
+<title>Sintoc.com</title>
+
+    <div class="navbar">
+      <div class="logo">
+         <img src="images/Sintoc-logos_black.png" width="150px">
+      </div>
+      <nav>   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+         <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="catalog.html">Browse</a></li>
+             <li><a href="">Home</a></li>
+         </ul>
+      </nav>
+    </div>
+</head>
+<body> I
+<div class="small-container single-product">
+    <div class="row">
+    <div class="col-2">
+        <img src="images/galaxya.png" width="100%" id="Producting"> 
+        
+        </div>
+        <div class="col-2">
+            <p>Mobile Phones</p>
+            <h1>Samsung Galaxy A12 (SM-A125F/DS) Dual SIM,128 GB, Factory Unlocked GSM, International Version </h1>
+            <h4>PHP9,990</h4>
+            <select>
+                <option>Black</option>
+                <option>White</option>
+                <option>Blue</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to Cart</a>
+            <h3>Specification<i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Samsung Galaxy A12<br><br><b>About this item</b></p><br>
+            <ul>
+                <li><p>Expand your view to the 6.5-inch Infinity-V Display of Galaxy A12 and see what you've been missing. Thanks to HD+ technology, your everyday content looks sharp, crisp and clear.</p></li>
+                <li><p>OS	Android 10, upgradable to Android 11, One UI 3.1
+Chipset	Mediatek MT6765 Helio P35 (12nm)
+CPU	Octa-core (4x2.35 GHz Cortex-A53 & 4x1.8 GHz Cortex-A53)
+GPU	PowerVR GE8320</p></li>
+                <li><p> CAMERA	Quad	48 MP, f/2.0, 26mm (wide), AF
+5 MP, f/2.2, 123˚ (ultrawide)
+2 MP, f/2.4, (macro)
+2 MP, f/2.4, (depth)
+Features	LED flash, panorama, HDR
+Video	1080p@30fps
+SELFIE CAMERA	Single	8 MP, f/2.2
+Video	1080p@30fps</p></li>
+                <li><p>Type	Li-Po 5000 mAh, non-removable
+Charging	Fast charging 15W</p></li>
+                <li><p>Display:	Type	PLS IPS
+Size	6.5 inches, 102.0 cm2 (~82.1% screen-to-body ratio)
+Resolution	720 x 1600 pixels, 20:9 ratio (~270 ppi density)</p></li>
+                </ul>
+        </div>
+    </div>
+    </div>
+    <div class='form'>
+        <h5>Add Comment</h5>
+        Name: <input type="text" id="name"><br><br>
+        Date: <input type="date" id="date"><br><br>
+        Body: <textarea rows="5" col="30" id="bodyText"></textarea><br><br>
+        <input type="button" id="addComment" value="Add Comment"> 
+<script>
+        
+    function editReview(){
+        const textarea = document.getElementById('bodyText');
+        let badwords = /fuck|fucking|shit|bitch|idiot|hell|nigga|BITCH|Piss|Dick|Asshole|Bastard|Damn|Cunt|Putanginamo|Walanghiya|Tae|Puñeta|Gago|Pakshet|Buwisit|Leche|ulul|sira|ulol|pakyu|putangna|refund|tarantado|putaragis|tite|penis|kupal|kinginamers|yawa|poke|shitty|poop|poopyhead|bad|hakdog|mema|baliw|shitty|pokpok|pota|taena|putae|pangit/gi;
+        let userreview1 = textarea.value;
+        let userreview2 = userreview1.replace(badwords,'######');
+        document.getElementById('bodyText').value = userreview2;
+    }
+        document.getElementById('addComment').addEventListener('click',editReview);
+    </script>
+
+    </div>
+    
+    <div id='container'>
+    
+    </div>
+    
+    
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src='script.js' type='text/javascript'></script>
+    
+        
+    
+    
+    
+</body>
+</html>

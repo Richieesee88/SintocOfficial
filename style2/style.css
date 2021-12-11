@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    background-color: #6374ba;
+    align-items: center;
+}
+.logo{
+    margin-left: 35px;
+}
+
+nav{
+    margin-right: 0px;
+    text-align: right;
+    float: right;
+    display: flex;
+}
+
+ul{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+
+    
+}
+ul li{
+    text-decoration: none;
+    display: inline;
+    margin-right: 20px;
+}
+ul: active{
+    background-color: aquamarine;
+}
+ ul li:hover{
+    background-color:white;
+	color:#404040;
+}
+a{
+    
+    text-decoration: none;
+    color: :#d1daff; 
+    font-family: 'Poppins', sans-serif;   
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    background-color: #dcdfe3;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.categories {
+    
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    flex-grow: 1;
+    min-width: 30.33%;
+    border: 2px solid white;
+    box-sizing: border-box;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.category-item-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.category-item-inner > div {
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+    .category-item {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .category-item {
+        min-width: 100%;
+    }
+}
+
+.featured-products {
+    padding-top: 50px;
+    padding-left: 50px;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+
+@media (max-width: 1000px) {
+    .featured-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .featured-products {
+        grid-template-columns: 1fr;
+    }
+}
+
+.featured-products-title {
+   text-align: center;
+   color: cornflowerblue;
+   font-size: 45px;
+   padding-top: 20px;
+}
+
+.featured-product-item {
+    height: 100%px;
+    width: 300px;
+    position: relative
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.featured-product-item-image {
+    padding-bottom: 300px;
+    margin-top: 20px;
+    width: 300px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.featured-product-item > .title {
+    padding-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.featured-product-item > .description {
+    color: #666;
+    font-size: 13px;
+}
+
+.featured-product-item > .price {
+    font-style: italic;
+}
+
